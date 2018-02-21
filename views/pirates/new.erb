@@ -1,1 +1,44 @@
-<h1>Make your form here</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  </head>
+  <body>
+    <h1>Pirates</h1>
+    <form action="/pirates" method="post">
+      <p> Pirate Name: <input id="pirate[name]" type="text" name="pirate[name]"> </p>
+      <p> Pirate Weight: <input id="pirate[weight]" type="text" name="pirate[weight]"> </p>
+      <p> Pirate Height: <input id="pirate[height]" type="text" name="pirate[height]"> </p>
+      <p> Ship Name: <input id="ship_name_1" type="text" name="pirate[ships][][name]"> </p>
+      <p> Ship Type: <input id="ship_type_1" type="text" name="pirate[ships][][type]"> </p>
+      <p> Ship Booty: <input id="ship_booty_1" type="text" name="pirate[ships][][booty]"> </p>
+      <p> Ship Name: <input id="ship_name_2" type="text" name="pirate[ships][][name]"> </p>
+      <p> Ship Type: <input id="ship_type_2" type="text" name="pirate[ships][][type]"> </p>
+      <p> Ship Booty: <input id="ship_booty_2" type="text" name="pirate[ships][][booty]"> </p>
+      <input id="Submit" type="submit">
+    </form>
+  </body>
+</html>
+
+
+<!--
+
+fill_in("pirate[name]", :with => "Captain Jack Sparrow")
+fill_in("pirate[weight]", :with => "190 lbs")
+fill_in("pirate[height]", :with => "5 feet 11 inches")
+fill_in("ship_name_1", :with => "Flying Dutchman")
+fill_in("ship_type_1", :with => "ghost ship")
+fill_in("ship_booty_1", :with => "gold coins")
+fill_in("ship_name_2", :with => "Black Pearl")
+fill_in("ship_type_2", :with => "merchant vessel")
+fill_in("ship_booty_2", :with => "treasure map") -->
+<!-- <form action="/student" method="post">
+  Student Name: <input type="text" name="student[name]">
+  Student Grade: <input type="text" name="student[grade]">
+  Course Name: <input type="text" name="student[courses][][name]">
+  Course Topic: <input type="text" name="student[courses][][topic]">
+  Course Name: <input type="text" name="student[courses][][name]">
+  Course Topic: <input type="text" name="student[courses][][topic]">
+  <input type="submit">
+</form> -->
